@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 3</title>
+</head>
+<body>
+    <h3>movie rating</h3>
+    <script>
+        function movieRating(movie) {
+    if (movie.rating >= 8) {
+        console.log('Superhit');
+    } else if (movie.rating >= 7 && movie.rating < 8) {
+        console.log('Blockbuster');
+    } else if (movie.rating >= 5 && movie.rating < 7) {
+        console.log('Hit');
+    } else if (movie.rating >= 3 && movie.rating < 5) {
+        console.log('Average');
+    } else {
+        console.log('Flop');
+    }
+}
+const movie = { title: 'Bahubali', rating: 9.2 };
+movieRating(movie);
+    </script>
+</body>
+</html>

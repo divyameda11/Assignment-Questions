@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 5</title>
+</head>
+<body>
+    <h1>second highest score</h1>
+    <script>
+        function secondHighestRank(students) {
+    const sortedStudents = students.sort((a, b) => b.marks - a.marks);
+    const highestMarks = sortedStudents[0].marks;
+    const secondHighestMarks = sortedStudents.find(student => student.marks < highestMarks).marks;
+    return sortedStudents.filter(student => student.marks === secondHighestMarks);
+}
+const students = [
+    { name: 'divya', marks: 85 },
+    { name: 'shivani', marks: 90 },
+    { name: 'saniya', marks: 85 },
+    { name: 'vaishu', marks: 78 }
+];
+        console.log(secondHighestRank(students));
+       </script>
+</body>
+</html>

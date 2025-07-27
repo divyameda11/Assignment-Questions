@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 6</title>
+</head>
+<body>
+    <h1>product object</h1>
+    <script>
+       class ProductManager {
+    constructor() {
+        this.products = [];
+    }
+ addProduct(product) {
+        this.products.push(product);
+    }
+groupByCategory() {
+        const categories = {};
+        this.products.forEach(product => {
+            if (!categories[product.category]) {
+                categories[product.category] = [];
+            }
+            categories[product.category].push(product);
+        });
+ return categories;
+    }
+}
+const productManager = new ProductManager();
+productManager.addProduct({ name: 'Laptop', category: 'Electronics', price: 10000 });
+productManager.addProduct({ name: 'Mobile', category: 'Electronics', price: 20000 });
+productManager.addProduct({ name: 'toy', category: 'toy', price: 50 });
+console.log(productManager.groupByCategory());
+    </script>
+</body>
+</html>

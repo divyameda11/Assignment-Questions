@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 1</title>
+</head>
+<body>
+    <h1>Book Details</h1>
+    <script>
+      function printBookDetails(book) {
+    console.log(`Title: ${book.title || 'Not available'}`);
+    console.log(`Author: ${book.author || 'Not available'}`);
+    console.log(`Year: ${book.year || 'Not available'}`);
+    console.log(`Publisher: ${book.publisher || 'Not available'}`);
+}
+const book = {
+    title: '8 vasanthalu',
+    author: 'shruthi Ayodhya',
+    year: 2025
+};
+printBookDetails(book);
+    </script>
+</body>
+</html>

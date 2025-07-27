@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 4</title>
+</head>
+<body>
+    <h1>Student Score</h1>
+    <script>
+        function totalScore(students) {
+    return students.reduce((sum, student) => sum + student.score, 0);
+}
+const students = [
+    { name: 'shivani', score: 85 },
+    { name: 'divya', score: 90 },
+    { name: 'saniya', score: 78 }
+];
+console.log(totalScore(students));
+    </script>
+</body>
+</html>

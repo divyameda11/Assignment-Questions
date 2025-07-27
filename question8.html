@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 8</title>
+</head>
+<body>
+    <h2>sort strings without using sort()</h2>
+    <script>
+        function sortStrings(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i].toLowerCase() > arr[j].toLowerCase()) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr;
+}
+const strings = ["dog", "cat", "apple", "banana", "elephant"];
+console.log(sortStrings(strings));
+    </script>
+</body>
+</html>

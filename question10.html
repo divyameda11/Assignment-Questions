@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 10</title>
+</head>
+<body>
+    <h1>getSeason() using switch</h1>
+    <script>
+        function getSeason(month) {
+    switch (month.toLowerCase()) {
+        case "december":
+        case "january":
+        case "february":
+            console.log("Winter");
+            break;
+        case "march":
+        case "april":
+        case "may":
+            console.log("Spring");
+            break;
+        case "j", "june":
+        case "july":
+            console.log("Summer");
+            break;
+        case "august":
+        case "september":
+        case "october":
+            console.log("Autumn");
+            break;
+        case "november":
+            console.log("Winter");
+            break;
+        default:
+            console.log("Invalid month");
+    }
+}
+getSeason("January");  // Output: Winter
+getSeason("June");     // Output: Summer
+getSeason("October");  // Output: Autumn
+getSeason("Invalid"); // Output: Invalid month
+    </script>
+</body>
+</html>
